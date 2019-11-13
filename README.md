@@ -54,9 +54,19 @@ ImagePicker.(
       ~cameraType=`back,
       ~mediaType=`photo,
       ~permissionDenied=
-        Options.PermissionDenied.options(~title="Permission denied !", ()),
+        Options.PermissionDenied.options(
+          ~title="Permission denied !",
+          ~text="text",
+          ~reTryTitle="Retry",
+          ~okTitle="Ok !",
+          (),
+        ),
       (),
     ),
+    res => {
+      Js.log(res##uri);
+      Js.log(res##path);
+    }
   )
 );
 ```
