@@ -2,6 +2,12 @@ module ImagePicker = {
   module Options = {
     type t;
 
+    module Button = {
+      type t;
+
+      [@bs.obj] external make: (~title: string, ~name: string) => t = "";
+    };
+
     module PermissionDenied = {
       type t;
 
@@ -55,14 +61,43 @@ module ImagePicker = {
         ~videoQuality: [@bs.string] [ | `low | `medium | `high]=?,
         ~storageOptions: Storage.t=?,
         ~permissionDenied: PermissionDenied.t=?,
+        ~customButtons: array(Button.t)=?,
         unit
       ) =>
       t =
       "";
   };
 
-  type response = {. "didCancel": bool};
+  type response = {
+    .
+    "didCancel": bool,
+    "error": string,
+    "customButton": string,
+    "data": string,
+    "uri": string,
+    "oriURL": string,
+    "isVertical": bool,
+    "width": int,
+    "height": int,
+    "fileSize": int,
+    "type": string,
+    "fileName": string,
+    "path": string,
+    "latitude": float,
+    "longitude": float,
+    "timestamp": int,
+    "originalRotation": float,
+  };
 
   [@bs.module "react-native-image-picker"] [@bs.scope "default"]
-  external launchCamera: Options.t => response = "launchCamera";
+  external launchCamera: (Options.t, response => unit) => unit =
+    "launchCamera";
+
+  [@bs.module "react-native-image-picker"] [@bs.scope "default"]
+  external showImagePicker: (Options.t, response => unit) => unit =
+    "showImagePicker";
+
+  [@bs.module "react-native-image-picker"] [@bs.scope "default"]
+  external launchImageLibrary: (Options.t, response => unit) => unit =
+    "launchImageLibrary";
 };
