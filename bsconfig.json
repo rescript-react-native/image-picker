@@ -1,9 +1,10 @@
 {
-  "name": "@reason-react-native/__template__",
+  "name": "@reason-react-native/image-picker",
   "refmt": 3,
   "reason": {
     "react-jsx": 3
   },
+  "namespace": false,
   "package-specs": {
     "module": "commonjs",
     "in-source": true
@@ -16,5 +17,5 @@
     }
   ],
   "bsc-flags": ["-bs-no-version-header", "-warn-error @a"],
-  "bs-dependencies": []
+  "bs-dependencies": ["reason-react"]
 }
