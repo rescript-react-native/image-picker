@@ -5,7 +5,8 @@ module ImagePicker = {
     module Button = {
       type t;
 
-      [@bs.obj] external make: (~title: string, ~name: string) => t = "";
+      [@bs.obj]
+      external make: (~title: string=?, ~name: string=?, unit) => t = "";
     };
 
     module PermissionDenied = {
@@ -14,10 +15,10 @@ module ImagePicker = {
       [@bs.obj]
       external options:
         (
-          ~title: string=?,
-          ~text: string=?,
-          ~reTryTitle: string=?,
-          ~okTitle: string=?,
+          ~title: string,
+          ~text: string,
+          ~reTryTitle: string,
+          ~okTitle: string,
           unit
         ) =>
         t =
@@ -75,16 +76,16 @@ module ImagePicker = {
     "customButton": string,
     "data": string,
     "uri": string,
-    "oriURL": string,
+    "origURL": option(string),
     "isVertical": bool,
     "width": int,
     "height": int,
     "fileSize": int,
-    "type": string,
-    "fileName": string,
-    "path": string,
-    "latitude": float,
-    "longitude": float,
+    "type": option(string),
+    "fileName": option(string),
+    "path": option(string),
+    "latitude": option(float),
+    "longitude": option(float),
     "timestamp": int,
     "originalRotation": float,
   };
