@@ -72,7 +72,7 @@ module ImagePicker = {
   type response = {
     .
     "didCancel": bool,
-    "error": string,
+    "error": option(string),
     "customButton": string,
     "data": string,
     "uri": string,
