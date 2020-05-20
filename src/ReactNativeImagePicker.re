@@ -80,7 +80,8 @@ module ImagePicker = {
     width: int,
     height: int,
     fileSize: int,
-    _type: option(string),
+    [@bs.as "type"]
+    type_: option(string),
     fileName: option(string),
     path: option(string),
     latitude: option(float),
