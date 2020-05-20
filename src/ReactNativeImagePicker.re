@@ -70,24 +70,23 @@ module ImagePicker = {
   };
 
   type response = {
-    .
-    "didCancel": bool,
-    "error": option(string),
-    "customButton": string,
-    "data": string,
-    "uri": string,
-    "origURL": option(string),
-    "isVertical": bool,
-    "width": int,
-    "height": int,
-    "fileSize": int,
-    "type": option(string),
-    "fileName": option(string),
-    "path": option(string),
-    "latitude": option(float),
-    "longitude": option(float),
-    "timestamp": int,
-    "originalRotation": float,
+    didCancel: bool,
+    error: option(string),
+    customButton: string,
+    data: string,
+    uri: string,
+    origURL: option(string),
+    isVertical: bool,
+    width: int,
+    height: int,
+    fileSize: int,
+    _type: option(string),
+    fileName: option(string),
+    path: option(string),
+    latitude: option(float),
+    longitude: option(float),
+    timestamp: int,
+    originalRotation: float,
   };
 
   [@bs.module "react-native-image-picker"] [@bs.scope "default"]
