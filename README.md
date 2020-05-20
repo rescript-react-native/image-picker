@@ -16,7 +16,7 @@ Exposed as `ReactNativeImagePicker` module.
 ## Installation
 1. Install
 [`react-native-image-picker`](https://github.com/react-native-community/react-native-image-picker)
-  by following their installation instructions.</li>
+  by following their installation instructions.
 
 2.  Install `@reason-react-native/image-picker`
 ```console
