@@ -14,19 +14,18 @@ Exposed as `ReactNativeImagePicker` module.
 `react-native-image-picker` X.y._
 
 ## Installation
+1. Install
+[`react-native-image-picker`](https://github.com/react-native-community/react-native-image-picker)
+  by following their installation instructions.
 
-When
-[`react-native-image-picker`](`https://github.com/react-native-community/react-native-image-picker`)
-is properly installed & configured by following their installation instructions,
-you can install the bindings:
-
+2.  Install `@reason-react-native/image-picker`
 ```console
 npm install @reason-react-native/image-picker
 # or
 yarn add @reason-react-native/image-picker
 ```
 
-`@reason-react-native/image-picker` should be added to `bs-dependencies` in your
+3.  Add `@reason-react-native/image-picker` to `bs-dependencies` in your
 `bsconfig.json`. Something like
 
 ```diff
@@ -41,7 +40,6 @@ yarn add @reason-react-native/image-picker
   //...
 }
 ```
-
 ## Usage
 
 ```reason
