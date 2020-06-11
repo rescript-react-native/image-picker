@@ -10,7 +10,7 @@ var $$Storage = { };
 var Options = {
   Button: Button,
   PermissionDenied: PermissionDenied,
-  Storage: $$Storage
+  $$Storage: $$Storage
 };
 
 var ImagePicker = {

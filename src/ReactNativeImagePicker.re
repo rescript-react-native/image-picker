@@ -101,22 +101,22 @@ module ImagePicker = {
   external launchImageLibrary: (Options.t, response => unit) => unit =
     "launchImageLibrary";
 };
-
-ImagePicker.(
-  launchCamera(
-    Options.make(
-      ~title="Take a picture",
-      ~cameraType=`back,
-      ~mediaType=`photo,
-      ~permissionDenied=
-        Options.PermissionDenied.options(
-          ~title="Permission denied !",
-          ~text="text",
-          ~reTryTitle="Retry",
-          ~okTitle="Ok !",
-          (),
-        ),
-      (),
-    ),
-  )
-);
+/*
+ ImagePicker.(
+   launchCamera(
+     Options.make(
+       ~title="Take a picture",
+       ~cameraType=`back,
+       ~mediaType=`photo,
+       ~permissionDenied=
+         Options.PermissionDenied.options(
+           ~title="Permission denied !",
+           ~text="text",
+           ~reTryTitle="Retry",
+           ~okTitle="Ok !",
+         ),
+       (),
+     ),
+   )
+ );
+ */
