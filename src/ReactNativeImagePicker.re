@@ -18,8 +18,7 @@ module ImagePicker = {
           ~title: string,
           ~text: string,
           ~reTryTitle: string,
-          ~okTitle: string,
-          unit
+          ~okTitle: string
         ) =>
         t =
         "";
