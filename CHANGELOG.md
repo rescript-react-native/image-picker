@@ -1,5 +1,9 @@
 # Changelog of `@reason-react-native/image-picker`
 
+## 2.3.1 - 2020-06-11
+
+- Remove example from bindings
+
 ## 2.3.0 - 2020-02-11
 
 Bump peer dependency of react-native-image-picker to version 2.3.0.
