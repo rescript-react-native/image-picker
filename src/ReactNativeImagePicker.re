@@ -5,8 +5,7 @@ module ImagePicker = {
     module Button = {
       type t;
 
-      [@bs.obj]
-      external make: (~title: string=?, ~name: string=?, unit) => t = "";
+      [@bs.obj] external make: (~title: string=?, ~name: string=?, unit) => t;
     };
 
     module PermissionDenied = {
@@ -21,8 +20,7 @@ module ImagePicker = {
           ~okTitle: string,
           unit
         ) =>
-        t =
-        "";
+        t;
     };
 
     module Storage = {
@@ -37,8 +35,7 @@ module ImagePicker = {
           ~waitUntilSaved: bool=?,
           unit
         ) =>
-        t =
-        "";
+        t;
     };
 
     [@bs.obj]
@@ -65,15 +62,14 @@ module ImagePicker = {
         ~customButtons: array(Button.t)=?,
         unit
       ) =>
-      t =
-      "";
+      t;
   };
 
   type response = {
     didCancel: bool,
     error: option(string),
     customButton: string,
-    data: string,
+    data: option(string),
     uri: string,
     origURL: option(string),
     isVertical: bool,
