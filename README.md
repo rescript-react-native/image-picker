@@ -6,7 +6,7 @@
 
 [ReasonML](https://reasonml.github.io) /
 [BuckleScript](https://bucklescript.github.io) bindings for
-[`@react-native-community/something`](https://github.com/react-native-community/something).
+[`react-native-image-picker`](https://github.com/react-native-community/react-native-image-picker).
 
 Exposed as `ReactNativeImagePicker` module.
 
@@ -16,7 +16,7 @@ Exposed as `ReactNativeImagePicker` module.
 ## Installation
 
 When
-[`react-native-image-picker`](`https://github.com/react-native-community/react-native-image-picker`)
+[`react-native-image-picker`](https://github.com/react-native-community/react-native-image-picker)
 is properly installed & configured by following their installation instructions,
 you can install the bindings:
 
@@ -59,7 +59,6 @@ ImagePicker.(
           ~text="text",
           ~reTryTitle="Retry",
           ~okTitle="Ok !",
-          (),
         ),
       (),
     ),
