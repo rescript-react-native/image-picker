@@ -5,8 +5,7 @@ module ImagePicker = {
     module Button = {
       type t;
 
-      [@bs.obj]
-      external make: (~title: string=?, ~name: string=?, unit) => t = "";
+      [@bs.obj] external make: (~title: string=?, ~name: string=?, unit) => t;
     };
 
     module PermissionDenied = {
@@ -20,8 +19,7 @@ module ImagePicker = {
           ~reTryTitle: string,
           ~okTitle: string
         ) =>
-        t =
-        "";
+        t;
     };
 
     module Storage = {
@@ -36,8 +34,7 @@ module ImagePicker = {
           ~waitUntilSaved: bool=?,
           unit
         ) =>
-        t =
-        "";
+        t;
     };
 
     [@bs.obj]
@@ -64,29 +61,28 @@ module ImagePicker = {
         ~customButtons: array(Button.t)=?,
         unit
       ) =>
-      t =
-      "";
+      t;
   };
 
   type response = {
-    .
-    "didCancel": bool,
-    "error": option(string),
-    "customButton": string,
-    "data": string,
-    "uri": string,
-    "origURL": option(string),
-    "isVertical": bool,
-    "width": int,
-    "height": int,
-    "fileSize": int,
-    "type": option(string),
-    "fileName": option(string),
-    "path": option(string),
-    "latitude": option(float),
-    "longitude": option(float),
-    "timestamp": int,
-    "originalRotation": float,
+    didCancel: bool,
+    error: option(string),
+    customButton: string,
+    data: option(string),
+    uri: string,
+    origURL: option(string),
+    isVertical: bool,
+    width: int,
+    height: int,
+    fileSize: int,
+    [@bs.as "type"]
+    type_: option(string),
+    fileName: option(string),
+    path: option(string),
+    latitude: option(float),
+    longitude: option(float),
+    timestamp: int,
+    originalRotation: float,
   };
 
   [@bs.module "react-native-image-picker"] [@bs.scope "default"]
