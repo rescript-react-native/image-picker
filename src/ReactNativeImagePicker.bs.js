@@ -1,11 +1,11 @@
 'use strict';
 
 
-var Button = { };
+var Button = {};
 
-var PermissionDenied = { };
+var PermissionDenied = {};
 
-var $$Storage = { };
+var $$Storage = {};
 
 var Options = {
   Button: Button,
