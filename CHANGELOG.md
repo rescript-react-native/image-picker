@@ -1,5 +1,15 @@
 # Changelog of `@reason-react-native/image-picker`
 
+## 2.3.2 - 2020-08-11
+
+### Breaking changes
+
+- Change response type from object to records [#4](https://github.com/reason-react-native/image-picker/pull/4) by [@a-c-sreedhar-reddy](https://github.com/a-c-sreedhar-reddy)
+
+### Minor changes
+
+- Upgrade deps [340ab78](https://github.com/reason-react-native/image-picker/commit/340ab78) by [@MoOx](https://github.com/MoOx)
+
 ## 2.3.1 - 2020-06-11
 
 - Remove example from bindings
