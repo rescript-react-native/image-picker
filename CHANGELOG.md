@@ -1,5 +1,9 @@
 # Changelog of `@reason-react-native/image-picker`
 
+## 2.3.3 - 2020-11-06
+
+rescript 8.2 compat
+
 ## 2.3.2 - 2020-08-11
 
 ### Breaking changes
