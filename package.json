@@ -1,5 +1,6 @@
 {
   "name": "@reason-react-native/image-picker",
+  "description": "ReScript bindings for react-native-image-picker.",
   "version": "2.3.3",
   "publishConfig": {
     "access": "public"
