@@ -1,5 +1,9 @@
 # Changelog of `@rescript-react-native/image-picker`
 
+## 2.3.5 - 2021-05-03
+
+ReScript
+
 ## 2.3.4 - 2020-11-17
 
 Fix npm description
