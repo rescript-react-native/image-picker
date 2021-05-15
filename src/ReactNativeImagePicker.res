@@ -79,13 +79,13 @@ module ImagePicker = {
     originalRotation: float,
   }
 
-  @module("react-native-image-picker") @scope("default")
+  @module("react-native-image-picker")
   external launchCamera: (Options.t, response => unit) => unit = "launchCamera"
 
-  @module("react-native-image-picker") @scope("default")
+  @module("react-native-image-picker")
   external showImagePicker: (Options.t, response => unit) => unit = "showImagePicker"
 
-  @module("react-native-image-picker") @scope("default")
+  @module("react-native-image-picker")
   external launchImageLibrary: (Options.t, response => unit) => unit = "launchImageLibrary"
 }
 /*
