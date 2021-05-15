@@ -1,5 +1,9 @@
 # Changelog of `@rescript-react-native/image-picker`
 
+## 2.3.6 - 2021-05-15
+
+Fix import scope [#6](https://github.com/rescript-react-native/image-picker/issues/6) by [@MoOx](https://github.com/MoOx)
+
 ## 2.3.5 - 2021-05-03
 
 ReScript
