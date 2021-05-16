@@ -1,7 +1,6 @@
 {
   "name": "@rescript-react-native/image-picker",
   "reason": { "react-jsx": 3 },
-  "namespace": false,
   "package-specs": {
     "module": "commonjs",
     "in-source": true

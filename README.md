@@ -5,7 +5,7 @@
 [![ReScript Forum](https://img.shields.io/discourse/posts?color=e6484f&label=ReScript%20Forum&server=https%3A%2F%2Fforum.rescript-lang.org)](https://forum.rescript-lang.org/)
 
 [ReScript](https://rescript-lang.org) bindings for
-[`react-native-image-picker`](https://github.com/react-native-community/react-native-image-picker).
+[`react-native-image-picker`](https://github.com/react-native-image-picker/react-native-image-picker).
 
 Exposed as `ReactNativeImagePicker` module.
 
@@ -15,7 +15,7 @@ Exposed as `ReactNativeImagePicker` module.
 ## Installation
 
 When
-[`react-native-image-picker`](https://github.com/react-native-community/react-native-image-picker)
+[`react-native-image-picker`](https://github.com/react-native-image-picker/react-native-image-picker)
 is properly installed & configured by following their installation instructions,
 you can install the bindings:
 
@@ -44,29 +44,17 @@ yarn add @rescript-react-native/image-picker
 ## Usage
 
 ```rescript
-open ReactNativeImagePicker;
+open ReactNativeImagePicker
 
-ImagePicker.(
-  launchCamera(
-    Options.make(
-      ~title="Take a picture",
-      ~cameraType=`back,
-      ~mediaType=`photo,
-      ~permissionDenied=
-        Options.PermissionDenied.options(
-          ~title="Permission denied !",
-          ~text="text",
-          ~reTryTitle="Retry",
-          ~okTitle="Ok !",
-        ),
-      (),
-    ),
-    res => {
-      Js.log(res##uri);
-      Js.log(res##path);
-    }
-  )
-);
+launchCamera(
+  options(
+    ~cameraType=#back,
+    ~mediaType=#photo,
+  ()),
+  res => {
+    Js.log(res.uri)
+  }
+)
 ```
 
 ---
